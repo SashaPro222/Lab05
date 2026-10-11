@@ -26,13 +26,14 @@
 
 // int temp = 20;
 
-// string result = temp switch {
+// string res = temp switch {
 //     < 0 => "Мороз",
 //     >= 0 and <= 14 => "Прохладно",
 //     >= 15 and <= 24 => "Комфортно",
 //     >= 25 and <= 34 => "Жарко",
 //     >= 35 => "Очень жарко"
 // };
+// Console.WriteLine(res);
 
 // string role = "teacher";
 
@@ -103,24 +104,24 @@
 // Console.WriteLine(cat);
 
 //Вариант 3
-// Console.Write("Введите день недели(с маленькой буквы): ");
-// string day = Console.ReadLine();
+Console.Write("Введите день недели(с маленькой буквы): ");
+string day = Console.ReadLine();
 
-// string schedule = day switch
-// {
-//     "понедельник" or "вторник" or "среда" or "четверг" or "пятница"
-//         => "9:00–21:00",
+string schedule = day switch
+{
+    "понедельник" or "вторник" or "среда" or "четверг" or "пятница"
+        => "9:00–21:00",
 
-//     "суббота"
-//         => "10:00–20:00",
+    "суббота"
+        => "10:00–20:00",
 
-//     "воскресенье"
-//         => "10:00–18:00",
+    "воскресенье"
+        => "10:00–18:00",
 
-//     _ => "День не распознан"
-// };
+    _ => "День не распознан"
+};
 
-// Console.WriteLine(schedule);
+Console.WriteLine(schedule);
 
 //Вариант 6
 Console.Write("Введите роль (admin/teacher/user): ");
